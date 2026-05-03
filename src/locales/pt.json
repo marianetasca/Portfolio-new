@@ -1,0 +1,89 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "description": "Desenvolvedora Front-end criando interfaces modernas e responsivas.",
+    "projects": "VER PROJETOS",
+    "contact": "ENTRE EM CONTATO"
+  },
+  "projects": {
+    "title": "rojetos",
+    "mini_project": "(mini projeto)",
+    "button": {
+      "view": "Vizualizar",
+      "access": "Acessar Site"
+    },
+
+    "mindly": {
+      "title": "Mindly Notes - Sistema de Anotações",
+      "description": "Aplicação web completa de anotações, com autenticação de usuários, organização por categorias e tags, anexos e notificações personalizadas."
+    },
+
+    "miniBlog": {
+      "title": "MiniBlog (React)",
+      "description": "Aplicação de blog desenvolvida em React com autenticação de usuários, CRUD de postagens e rotas protegidas. Utiliza Firebase como backend e Context API para gerenciamento de estado global."
+    },
+
+    "portifolio_old": {
+      "title": "Portfólio Pessoal (versão inicial)",
+      "description": "Primeira versão do meu portfólio, realizado no meu primeiro periodo da faculdade, desenvolvida para praticar HTML, CSS e estruturação de páginas web."
+    },
+
+    "form_validation": {
+      "title": "Validação de Formulário (JS)",
+      "description": "Exercício prático utilizando JavaScript para validação de formulário e manipulação do DOM."
+    },
+
+    "react_project": {
+      "title": "Secret Word (React)",
+      "description": "Projeto em React voltado para prática de componentização, manipulação de estado e construção de interfaces interativas."
+    },
+    "js_project": {
+      "title": "Agenda (JS)",
+      "description": "Sistema de agenda com autenticação de usuários e gerenciamento de contatos, desenvolvido seguindo o padrão MVC. Stack: Node.js, Express, MongoDB, Mongoose e EJS"
+    }
+  },
+  "about": {
+    "title_part1": "S",
+    "title_part2": "obre",
+    "about_me": {
+      "part1": "Sou Desenvolvedora ",
+      "highlight": "Front-end",
+      "part2": "formada em Análise e Desenvolvimento de Sistemas, com foco na criação de interfaces modernas, responsivas e centradas na experiência do usuário."
+    },
+    "experience_part1": "Tenho experiência prática por meio de projetos próprios, como o ",
+    "experience_highlight": "MindlyNotes",
+    "experience_part2": ", desenvolvido como trabalho de conclusão de curso, onde apliquei conceitos de interface, usabilidade e organização de sistemas.",
+    "backend": "Possuo também noções de back-end, o que me permite compreender melhor a integração entre as partes da aplicação, além de familiaridade com metodologias ágeis como Scrum e Kanban.",
+    "idiom": {
+      "english_title": "Inglês - Nível Avançado",
+      "english": "Certificação CCAA",
+      "bayswater_title": "Intercâmbio",
+      "bayswater": "Certificação em Inglês · Bayswater College, Liverpool"
+    }
+  },
+  "contact": {
+    "title": "ontato",
+    "intro": "Entre em contato pelas plataformas abaixo:",
+    "download": "Baixar Currículo",
+    "availability": "Disponível para oportunidades",
+    "linkedin": {
+      "action": "Conectar"
+    },
+    "github": {
+      "action": "Ver projetos"
+    },
+    "email": {
+      "action": "Enviar E-mail"
+    },
+    "whatsapp": {
+      "action": "Enviar Mensagem"
+    }
+  },
+  "footer": "Todos os direitos reservados."
+}

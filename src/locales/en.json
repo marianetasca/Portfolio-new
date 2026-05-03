@@ -1,0 +1,88 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'am",
+    "description": "Front-end developer creating modern and responsive interfaces.",
+    "projects": "VIEW PROJECTS",
+    "contact": "GET IN TOUCH"
+  },
+  "projects": {
+    "title": "rojects",
+    "mini_project": "(mini project)",
+    "button": {
+      "view": "View",
+      "access": "Visit Website "
+    },
+    "mindly": {
+      "title": "Mindly Notes - Web Notes Application",
+      "description": "A complete web-based note-taking application with user authentication, organization by categories and tags, attachments, and personalized notifications."
+    },
+
+    "miniBlog": {
+      "title": "MiniBlog (React)",
+      "description": "Blog application developed in React with user authentication, post CRUD, and protected routes. Uses Firebase as the backend and Context API for global state management."
+    },
+
+    "portifolio_old": {
+      "title": "Personal Portfolio (First Version)",
+      "description": "First version of my portfolio, created during my first semester of college, developed to practice HTML, CSS, and web page structuring."
+    },
+
+    "form_validation": {
+      "title": "Form Validation (JS)",
+      "description": "Practical exercise using JavaScript for form validation and DOM manipulation."
+    },
+
+    "react_project": {
+      "title": "Secret Word (React)",
+      "description": "React project focused on practicing componentization, state management, and building interactive interfaces."
+    },
+    "js_project": {
+      "title": "Agenda (JS)",
+      "description": "Agenda system with user authentication and contact management, developed following the MVC pattern. Stack: Node.js, Express, MongoDB, Mongoose, and EJS"
+    }
+  },
+  "about": {
+    "title_part1": "A",
+    "title_part2": "bout",
+    "about_me": {
+      "part1": "I am a ",
+      "highlight": "Front-end",
+      "part2": "developer, graduated in Systems Analysis and Development, focused on creating modern, responsive interfaces centered on user experience."
+    },
+    "experience_part1": "I have practical experience through personal projects, such as ",
+    "experience_highlight": " MindlyNotes",
+    "experience_part2": ", developed as my graduation thesis, where I applied concepts of interface design, usability, and system organization.",
+    "backend": "I also have knowledge of back-end development, which allows me to better understand the integration between different parts of an application, as well as familiarity with agile methodologies such as Scrum and Kanban.",
+    "idiom": {
+      "english_title": "English - Advanced Level",
+      "english": "CCAA Certification",
+      "bayswater_title": " Exchange Program",
+      "bayswater": "English Certification · Bayswater College, Liverpool"
+    }
+  },
+  "contact": {
+    "title": "ontact",
+    "intro": "Get in touch through the platforms below:",
+    "download": "Download Resume",
+    "availability": "Available for opportunities",
+    "linkedin": {
+      "action": "Connect"
+    },
+    "github": {
+      "action": "View projects"
+    },
+    "email": {
+      "action": "Send Email"
+    },
+    "whatsapp": {
+      "action": "Send Message"
+    }
+  },
+  "footer": "All rights reserved."
+}

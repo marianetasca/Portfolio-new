@@ -1,0 +1,53 @@
+.sectionBg {
+  position: relative;
+  overflow: hidden;
+  background-color: #020617;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  left: -100px;
+  z-index: 1;
+
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.3), transparent 60%);
+  filter: blur(120px);
+
+  animation: floatGlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(200px, 150px);
+  }
+}
+.section::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  bottom: -100px;
+  right: -100px;
+  z-index: 1;
+
+
+  background: radial-gradient(circle, rgba(109, 111, 242, 0.503), transparent 60%);
+  filter: blur(120px);
+
+  animation: floatGlow2 14s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-150px, -120px);
+  }
+}

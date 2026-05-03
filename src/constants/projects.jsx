@@ -1,0 +1,93 @@
+import mindlynotes from "../assets/projects/mindlynotes.png";
+import portifolio1 from "../assets/projects/portifolio1.png";
+import formulario from "../assets/projects/formulario.png";
+import secretWord from "../assets/projects/secretWord.png";
+import agenda1 from "../assets/projects/agenda.png";
+import miniBlog from "../assets/projects/miniblog.png"
+
+export const projects = [
+  {
+    id: "mindlynotes",
+    title: "projects.mindly.title",
+    description: "projects.mindly.description",
+    image: mindlynotes,
+    alt: "MindlyNotes — sistema de anotações",
+    site: "https://www.mindlynotes.com.br",
+    github: "https://github.com/marianetasca/bloco-notas-TCC.git",
+    tags: ["laravel", "mysql", "php", "css", "bootstrap", "html", "javascript"],
+    button: "projects.button.access",
+    mini: false,
+  },
+  {
+    id: "miniBlog",
+    title: "projects.miniBlog.title",
+    description: "projects.miniBlog.description",
+    image: miniBlog,
+    alt: "MiniBlog em react",
+    site: "https://miniblog-chi-umber.vercel.app",
+    github:
+      "https://github.com/marianetasca/cursoREACT/tree/main/10_miniblog/miniblog",
+    tags: ["react", "html", "css", "javascript", "firebase"],
+    button: "projects.button.view",
+    mini: false,
+  },
+  {
+    id: "secret-word",
+    title: "projects.react_project.title",
+    description: "projects.react_project.description",
+    image: secretWord,
+    alt: "Secret Word — jogo de adivinhar palavras em React",
+    site: "https://curso-react-2djo.vercel.app",
+    github:
+      "https://github.com/marianetasca/cursoREACT/tree/main/5_secret_world/secretworld",
+    tags: ["react", "html", "css", "javascript"],
+    button: "projects.button.view",
+    mini: true,
+  },
+
+  {
+    id: "agenda",
+    title: "projects.js_project.title",
+    description: "projects.js_project.description",
+    image: agenda1,
+    alt: "Agenda de contatos com Node.js",
+    site: "https://cursojs-b931.onrender.com",
+    github: "https://github.com/marianetasca/cursoJS/tree/main/projetoAgenda",
+    tags: [
+      "html",
+      "css",
+      "javascript",
+      "node",
+      "bootstrap",
+      "express",
+      "mongodb",
+    ],
+    button: "projects.button.view",
+    mini: true,
+  },
+  {
+    id: "formulario",
+    title: "projects.form_validation.title",
+    description: "projects.form_validation.description",
+    image: formulario,
+    alt: "Formulário com validação em JavaScript",
+    site: "https://marianetasca.github.io/cursoJS/formularioClasse/",
+    github:
+      "https://github.com/marianetasca/cursoJS/tree/main/formularioClasse",
+    tags: ["html", "css", "javascript"],
+    button: "projects.button.view",
+    mini: true,
+  },
+  {
+    id: "portifolio-old",
+    title: "projects.portifolio_old.title",
+    description: "projects.portifolio_old.description",
+    image: portifolio1,
+    alt: "Portfólio pessoal versão inicial",
+    site: "https://marianetasca.github.io/portifolio/",
+    github: "https://github.com/marianetasca/portifolio.git",
+    tags: ["html", "css", "javascript"],
+    button: "projects.button.view",
+    mini: false,
+  },
+];
