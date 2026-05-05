@@ -4,7 +4,7 @@
   background-color: #020617;
 }
 
-.section::before {
+.sectionBg::before {
   content: "";
   position: absolute;
   width: 600px;
@@ -27,7 +27,7 @@
     transform: translate(200px, 150px);
   }
 }
-.section::after {
+.sectionBg::after {
   content: "";
   position: absolute;
   width: 500px;
