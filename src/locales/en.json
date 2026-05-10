@@ -16,7 +16,8 @@
     "mini_project": "(mini project)",
     "button": {
       "view": "View",
-      "access": "Visit Website "
+      "access": "Visit Website",
+      "all": "All"
     },
     "mindly": {
       "title": "Mindly Notes - Web Notes Application",
@@ -44,7 +45,11 @@
     },
     "js_project": {
       "title": "Agenda (JS)",
-      "description": "Agenda system with user authentication and contact management, developed following the MVC pattern. Stack: Node.js, Express, MongoDB, Mongoose, and EJS"
+      "description": "Agenda system featuring user authentication and contact management, built with Node.js using the MVC architecture, Express, MongoDB, Mongoose, and EJS."
+    },
+    "api": {
+      "title": "API REST",
+      "description": "REST API developed to deepen back-end knowledge, using Node.js, MVC architecture, Express, JWT authentication, and integration with MariaDB through Sequelize."
     }
   },
   "about": {

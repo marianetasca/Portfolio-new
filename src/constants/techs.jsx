@@ -14,6 +14,8 @@ import {
   SiMysql,
   SiExpress,
   SiMongodb,
+  SiMariadb,
+  SiSequelize,
 } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 
@@ -32,7 +34,9 @@ export const techColors = {
   node: "bg-green-500/10 text-green-400 border border-green-400/30",
   express: "bg-gray-500/10 text-gray-300 border border-gray-400/30",
   mongodb: "bg-emerald-500/10 text-emerald-400 border border-emerald-400/30",
-  firebase: "bg-yellow-500/10 text-yellow-400 border border-yellow-400/30"
+  firebase: "bg-yellow-500/10 text-yellow-400 border border-yellow-400/30",
+  mariadb: "bg-blue-700/10 text-blue-700 border border-blue-700/30",
+  sequelize: "bg-gray-500/10 text-gray-300 border border-gray-400/30",
 };
 
 export const techIcons = {
@@ -49,5 +53,7 @@ export const techIcons = {
   node: FaNodeJs,
   express: SiExpress,
   mongodb: SiMongodb,
-  firebase: IoLogoFirebase
+  firebase: IoLogoFirebase,
+  mariadb: SiMariadb,
+  sequelize: SiSequelize
 };

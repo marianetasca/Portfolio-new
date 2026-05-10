@@ -15,7 +15,7 @@ const Footer = () => {
         <hr className="border border-gray-800" />
         <p className="text-center pt-2">
           Copyright &copy; Mariane - {t("footer")}
-        </p>{" "}
+        </p>
       </div>
     </section>
   );

@@ -53,10 +53,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`${styles.heroBg} w-full min-h-screen text-white flex flex-col justify-center border-b-3 border-gray-800 relative`}
+      className={`${styles.heroBg} w-full min-h-screen text-white flex flex-col justify-center border-b-3 border-gray-800`}
     >
       {/* Aurora no fundo */}
-      <div className="absolute top-0 left-0 w-full h-[70vh] z-0">
+      <div className="absolute top-0 left-0 w-full h-[70vh]">
         <Aurora
           colorStops={["#0f5c85", "#2a2a72", "#26494d"]}
           blend={0.5}

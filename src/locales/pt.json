@@ -16,7 +16,8 @@
     "mini_project": "(mini projeto)",
     "button": {
       "view": "Vizualizar",
-      "access": "Acessar Site"
+      "access": "Acessar Site",
+      "all": "Todos"
     },
 
     "mindly": {
@@ -45,7 +46,11 @@
     },
     "js_project": {
       "title": "Agenda (JS)",
-      "description": "Sistema de agenda com autenticação de usuários e gerenciamento de contatos, desenvolvido seguindo o padrão MVC. Stack: Node.js, Express, MongoDB, Mongoose e EJS"
+      "description": "Sistema de agenda com autenticação de usuários e gerenciamento de contatos, desenvolvido em Node.js seguindo o padrão MVC, utilizando Express, MongoDB, Mongoose e EJS."
+    },
+    "api": {
+      "title": "API REST",
+      "description": "API REST desenvolvida para aprofundar conhecimentos em back-end, utilizando Node.js, arquitetura MVC, Express, autenticação JWT e integração com MariaDB através do Sequelize."
     }
   },
   "about": {

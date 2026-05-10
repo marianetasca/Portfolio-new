@@ -3,7 +3,8 @@ import portifolio1 from "../assets/projects/portifolio1.png";
 import formulario from "../assets/projects/formulario.png";
 import secretWord from "../assets/projects/secretWord.png";
 import agenda1 from "../assets/projects/agenda.png";
-import miniBlog from "../assets/projects/miniblog.png"
+import miniBlog from "../assets/projects/miniblog.png";
+import api from "../assets/projects/api.png";
 
 export const projects = [
   {
@@ -16,6 +17,7 @@ export const projects = [
     github: "https://github.com/marianetasca/bloco-notas-TCC.git",
     tags: ["laravel", "mysql", "php", "css", "bootstrap", "html", "javascript"],
     button: "projects.button.access",
+    category: "fullstack",
     mini: false,
   },
   {
@@ -29,6 +31,7 @@ export const projects = [
       "https://github.com/marianetasca/cursoREACT/tree/main/10_miniblog/miniblog",
     tags: ["react", "html", "css", "javascript", "firebase"],
     button: "projects.button.view",
+    category: "fullstack",
     mini: false,
   },
   {
@@ -42,6 +45,7 @@ export const projects = [
       "https://github.com/marianetasca/cursoREACT/tree/main/5_secret_world/secretworld",
     tags: ["react", "html", "css", "javascript"],
     button: "projects.button.view",
+    category: "frontend",
     mini: true,
   },
 
@@ -63,7 +67,21 @@ export const projects = [
       "mongodb",
     ],
     button: "projects.button.view",
+    category: "fullstack",
     mini: true,
+  },
+  {
+    id: "api",
+    title: "projects.api.title",
+    description: "projects.api.description",
+    image: api,
+    alt: "Agenda de contatos com Node.js",
+    site: "",
+    github: "https://github.com/marianetasca/cursoJS/tree/main/projetoAgenda",
+    tags: ["node", "javascript", "express", "mariadb", "sequelize"],
+    button: "projects.button.view",
+    category: "backend",
+    mini: false,
   },
   {
     id: "formulario",
@@ -76,6 +94,7 @@ export const projects = [
       "https://github.com/marianetasca/cursoJS/tree/main/formularioClasse",
     tags: ["html", "css", "javascript"],
     button: "projects.button.view",
+    category: "frontend",
     mini: true,
   },
   {
@@ -88,6 +107,7 @@ export const projects = [
     github: "https://github.com/marianetasca/portifolio.git",
     tags: ["html", "css", "javascript"],
     button: "projects.button.view",
+    category: "frontend",
     mini: false,
   },
 ];

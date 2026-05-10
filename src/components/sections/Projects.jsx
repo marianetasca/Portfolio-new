@@ -10,6 +10,8 @@ import { useTranslation } from "react-i18next";
 const Projects = () => {
   const { t } = useTranslation();
 
+  const [filter, setFilter] = useState("all");
+
   const [showAll, setShowAll] = useState(false);
   const [initialCount, setInitialCount] = useState(6);
 
@@ -23,7 +25,14 @@ const Projects = () => {
     return () => window.removeEventListener("resize", updateCount);
   }, []);
 
-  const visibleProjects = showAll ? projects : projects.slice(0, initialCount); //projects esta sendo importado aqui
+  const filteredProjects =
+    filter === "all"
+      ? projects //projects esta sendo importado aqui
+      : projects.filter((project) => project.category === filter);
+
+  const visibleProjects = showAll
+    ? filteredProjects
+    : filteredProjects.slice(0, initialCount);
 
   return (
     <section
@@ -36,6 +45,51 @@ const Projects = () => {
           {t("projects.title")} &gt;
         </h1>
 
+        <div className="flex flex-wrap gap-3 mb-8">
+          <button
+            onClick={() => setFilter("all")}
+            className={`px-4 py-1 rounded-full border hover:shadow-md hover:shadow-cyan-400/20 transition ${
+              filter === "all"
+                ? "border-cyan-300 hover:bg-cyan-400/10 bg-white/5"
+                : "border-white/10 bg-white/5"
+            }`}
+          >
+            {t("projects.button.all")}
+          </button>
+
+          <button
+            onClick={() => setFilter("fullstack")}
+            className={`px-4 py-1 rounded-full border hover:shadow-md hover:shadow-cyan-400/20 transition ${
+              filter === "fullstack"
+                ? "border-cyan-300 hover:bg-cyan-400/10 bg-white/5"
+                : "border-white/10 bg-white/5"
+            }`}
+          >
+            Full Stack
+          </button>
+
+          <button
+            onClick={() => setFilter("frontend")}
+            className={`px-4 py-1 rounded-full border hover:shadow-md hover:shadow-cyan-400/20 transition ${
+              filter === "frontend"
+                ? "border-cyan-300 hover:bg-cyan-400/10 bg-white/5"
+                : "border-white/10 bg-white/5"
+            }`}
+          >
+            Front-End
+          </button>
+
+          <button
+            onClick={() => setFilter("backend")}
+            className={`px-4 py-1 rounded-full border hover:shadow-md hover:shadow-cyan-400/20 transition ${
+              filter === "backend"
+                ? "border-cyan-300 hover:bg-cyan-400/10 bg-white/5"
+                : "border-white/10 bg-white/5"
+            }`}
+          >
+            Back-End
+          </button>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           {visibleProjects.map((project) => (
             <div
@@ -67,19 +121,21 @@ const Projects = () => {
 
                 {/* BOTÕES */}
                 <div className="flex gap-4">
-                  <a
-                    href={project.site}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-3 flex w-2/3 items-center justify-center h-8 border border-cyan-300 hover:bg-cyan-400/10 hover:shadow-md hover:shadow-cyan-400/20 transition rounded-lg text-sm"
-                  >
-                    {t(project.button)}
-                  </a>
+                  {project.site && (
+                    <a
+                      href={project.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 flex flex-2 items-center justify-center h-8 border border-cyan-300 hover:bg-cyan-400/10 transition rounded-lg text-sm"
+                    >
+                      {t(project.button)}
+                    </a>
+                  )}
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 flex w-1/3 items-center justify-center h-8 border border-cyan-300 hover:bg-cyan-400/10 hover:shadow-md hover:shadow-cyan-400/20 transition rounded-lg text-sm"
+                    className="mt-3 flex flex-1 items-center justify-center h-8 border border-cyan-300 hover:bg-cyan-400/10 hover:shadow-md hover:shadow-cyan-400/20 transition rounded-lg text-sm"
                   >
                     GitHub
                   </a>
@@ -97,13 +153,13 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        {!showAll && projects.length > initialCount && (
+        {!showAll && filteredProjects.length > initialCount && (
           <div className="flex justify-center mt-4 mb-8">
             <button
               onClick={() => setShowAll(true)}
               className="px-6 py-2.5 text-sm border border-cyan-400/30 text-cyan-400 rounded-full hover:bg-cyan-400/10 transition"
             >
-              Ver todos ({projects.length}) ↓
+              Ver todos ({filteredProjects.length}) ↓
             </button>
           </div>
         )}
