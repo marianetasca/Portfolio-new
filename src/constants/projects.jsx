@@ -1,10 +1,10 @@
 import mindlynotes from "../assets/projects/mindlynotes.png";
-import portifolio1 from "../assets/projects/portifolio1.png";
 import formulario from "../assets/projects/formulario.png";
 import secretWord from "../assets/projects/secretWord.png";
 import agenda1 from "../assets/projects/agenda.png";
 import miniBlog from "../assets/projects/miniblog.png";
 import api from "../assets/projects/api.png";
+import reactGram from "../assets/projects/reactgram.png"
 
 export const projects = [
   {
@@ -17,6 +17,19 @@ export const projects = [
     github: "https://github.com/marianetasca/bloco-notas-TCC.git",
     tags: ["laravel", "mysql", "php", "css", "bootstrap", "html", "javascript"],
     button: "projects.button.access",
+    category: "fullstack",
+    mini: false,
+  },
+  {
+    id: "reactGram",
+    title: "projects.reactGram.title",
+    description: "projects.reactGram.description",
+    image: reactGram,
+    alt: "ReactGram",
+    site: "https://react-gram.vercel.app",
+    github: "https://github.com/marianetasca/ReactGram",
+    tags: ["react", "redux", "nodejs", "express", "mongodb", "css", "javascript", "postman"],
+    button: "projects.button.view",
     category: "fullstack",
     mini: false,
   },
@@ -61,7 +74,7 @@ export const projects = [
       "html",
       "css",
       "javascript",
-      "node",
+      "nodejs",
       "bootstrap",
       "express",
       "mongodb",
@@ -78,7 +91,7 @@ export const projects = [
     alt: "Agenda de contatos com Node.js",
     site: "",
     github: "https://github.com/marianetasca/cursoJS/tree/main/projetoAgenda",
-    tags: ["node", "javascript", "express", "mariadb", "sequelize"],
+    tags: ["nodejs", "javascript", "express", "mariadb", "sequelize"],
     button: "projects.button.view",
     category: "backend",
     mini: false,
@@ -96,18 +109,5 @@ export const projects = [
     button: "projects.button.view",
     category: "frontend",
     mini: true,
-  },
-  {
-    id: "portifolio-old",
-    title: "projects.portifolio_old.title",
-    description: "projects.portifolio_old.description",
-    image: portifolio1,
-    alt: "Portfólio pessoal versão inicial",
-    site: "https://marianetasca.github.io/portifolio/",
-    github: "https://github.com/marianetasca/portifolio.git",
-    tags: ["html", "css", "javascript"],
-    button: "projects.button.view",
-    category: "frontend",
-    mini: false,
   },
 ];

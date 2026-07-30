@@ -30,9 +30,9 @@
       "description": "Aplicação de blog desenvolvida em React com autenticação de usuários, CRUD de postagens e rotas protegidas. Utiliza Firebase como backend e Context API para gerenciamento de estado global."
     },
 
-    "portifolio_old": {
-      "title": "Portfólio Pessoal (versão inicial)",
-      "description": "Primeira versão do meu portfólio, realizado no meu primeiro periodo da faculdade, desenvolvida para praticar HTML, CSS e estruturação de páginas web."
+    "reactGram": {
+      "title": "ReactGram",
+      "description": "Aplicação full-stack de compartilhamento de fotos desenvolvida com React, Redux Toolkit, Node.js, Express e MongoDB. Conta com autenticação JWT, infinite scroll com paginação no backend, sistema de curtidas com toggle e layout com tema escuro em CSS puro, os teste da API feito no Postaman."
     },
 
     "form_validation": {
