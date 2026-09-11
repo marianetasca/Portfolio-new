@@ -22,7 +22,7 @@ const Contact = () => {
           {t("contact.title")} &gt;
         </h1>
         <a
-          href="/Mariane-Tasca-Frontend.pdf"
+          href="/Mariane-Tasca-CV.pdf"
           download
           className="py-1 px-4 text-xs rounded-full absolute top-8 right-0 md:text-sm border border-cyan-300 hover:bg-cyan-400/10 hover:shadow-md hover:shadow-cyan-400/20"
         >

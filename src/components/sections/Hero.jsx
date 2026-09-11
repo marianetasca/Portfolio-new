@@ -15,7 +15,7 @@ import {
   FaLaravel,
   FaCss3Alt,
   FaHtml5,
-  FaGithub
+  FaGithub,
 } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss, SiMysql } from "react-icons/si";
 
@@ -28,11 +28,18 @@ const Hero = () => {
     if (i < text.length) {
       const timeout = setTimeout(() => {
         setDisplayText((prev) => prev + text.charAt(i));
-        setI(i + 1);
+        setI((prev) => prev + 1);
       }, 100); // velocidade
 
       return () => clearTimeout(timeout);
     }
+
+    const restartTimeout = setTimeout(() => {
+      setDisplayText("");
+      setI(0);
+    }, 1500); // pausa antes de reiniciar
+
+    return () => clearTimeout(restartTimeout);
   }, [i, text]);
 
   const techIcons = [
@@ -45,7 +52,7 @@ const Hero = () => {
     FaLaravel,
     SiMysql,
     FaGitAlt,
-    FaGithub
+    FaGithub,
   ];
 
   const { t } = useTranslation();

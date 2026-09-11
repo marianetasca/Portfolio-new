@@ -35,8 +35,6 @@
   bottom: -100px;
   right: -100px;
   z-index: 1;
-
-
   background: radial-gradient(circle, rgba(109, 111, 242, 0.503), transparent 60%);
   filter: blur(120px);
 
@@ -50,18 +48,4 @@
   100% {
     transform: translate(-150px, -120px);
   }
-}
-
-.tag {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-  border-radius: 9999px;
-  background-color: rgba(34, 211, 238, 0.1);
-  border: 1px solid rgba(34, 211, 238, 0.2);
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-.tag:hover {
-  background-color: rgba(34, 211, 238, 0.2);
-  transform: scale(1.05);
 }
